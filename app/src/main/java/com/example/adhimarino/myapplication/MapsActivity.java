@@ -12,8 +12,6 @@ import com.firebase.geofire.GeoFire;
 import com.firebase.geofire.GeoLocation;
 import com.firebase.geofire.GeoQuery;
 import com.firebase.geofire.GeoQueryEventListener;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -22,7 +20,6 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.nearby.Nearby;
 import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -62,12 +59,11 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap = googleMap;
         mMap.animateCamera(CameraUpdateFactory.zoomTo(mMap.getCameraPosition().zoom - 15.5f));
         mMap.getUiSettings().setZoomControlsEnabled(true);
-        googleMap.getUiSettings().setZoomControlsEnabled(true);
 
 
 
         LatLng Giwangan = new LatLng(-7.834420, 110.391708);
-        mMap.addMarker(new MarkerOptions().position(Giwangan).title("Terminal Giwangan").snippet("Jl Imogiri Timur").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelterr)));
+        mMap.addMarker(new MarkerOptions().position(Giwangan).title("Terminal Giwangan").snippet("Jl Imogiri Timur").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelter)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Giwangan));
 
         LatLng tegalgendu = new LatLng(-7.834420, 110.391708);
@@ -83,7 +79,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLng(SoloJanti));
 
         LatLng Transmart = new LatLng(-7.783204, 110.420169);
-        mMap.addMarker(new MarkerOptions().position(Transmart).title("Transmart").snippet("Jl Solo").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelterr)));
+        mMap.addMarker(new MarkerOptions().position(Transmart).title("Transmart").snippet("Jl Solo").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelter)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Transmart));
 
         LatLng Maguwo = new LatLng(-7.783326, 110.4303992);
@@ -91,7 +87,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Maguwo));
 
         LatLng Bandara = new LatLng(-7.784518, 110.43569);
-        mMap.addMarker(new MarkerOptions().position(Bandara).title("Bandara").snippet("Bandara ADISUCIPTO").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelterr)));
+        mMap.addMarker(new MarkerOptions().position(Bandara).title("Bandara").snippet("Bandara ADISUCIPTO").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelter)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Bandara));
 
         LatLng Disnaker = new LatLng(-7.769320, 110.431056);
@@ -111,7 +107,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Hartono));
 
         LatLng CondongCatur = new LatLng(-7.756636, 110.395825);
-        mMap.addMarker(new MarkerOptions().position(CondongCatur).title("Terminal Condong Catur").snippet("Terminal Condong Catur").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelterr)));
+        mMap.addMarker(new MarkerOptions().position(CondongCatur).title("Terminal Condong Catur").snippet("Terminal Condong Catur").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelter)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(CondongCatur));
 
         LatLng Manggung = new LatLng(-7.758188, 110.386465);
