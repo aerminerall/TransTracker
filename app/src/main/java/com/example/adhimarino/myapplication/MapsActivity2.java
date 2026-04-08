@@ -76,7 +76,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
         mMap.addMarker(new MarkerOptions().position(Giwangan)
                 .title("Terminal Giwangan")
                 .snippet("Jl Imogiri Timur")
-                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelterr)));
+                .icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelter)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Giwangan));
 
 
@@ -97,7 +97,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Maguwo));
 
         Bandara = new LatLng(-7.784518, 110.43569);
-        mMap.addMarker(new MarkerOptions().position(Bandara).title("Bandara").snippet("Bandara ADISUCIPTO").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelterr)));
+        mMap.addMarker(new MarkerOptions().position(Bandara).title("Bandara").snippet("Bandara ADISUCIPTO").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelter)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Bandara));
 
         tejokusuman = new LatLng(-7.807815, 110.355995);
@@ -117,7 +117,7 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sudriman3));
 
         CondongCatur = new LatLng(-7.756636, 110.395825);
-        mMap.addMarker(new MarkerOptions().position(CondongCatur).title("Terminal Condong Catur").snippet("Terminal Condong Catur").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelterr)));
+        mMap.addMarker(new MarkerOptions().position(CondongCatur).title("Terminal Condong Catur").snippet("Terminal Condong Catur").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelter)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(CondongCatur));
 
         yap = new LatLng(-7.781218, 110.375166);
@@ -173,16 +173,16 @@ public class MapsActivity2 extends FragmentActivity implements OnMapReadyCallbac
         mMap.moveCamera(CameraUpdateFactory.newLatLng(tegalgendu));
 
         ngabean = new LatLng(-7.803723, 110.356256);
-        mMap.addMarker(new MarkerOptions().position(ngabean).title("Terminal Ngabean").snippet("Terminal Ngabean").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelterr)));
+        mMap.addMarker(new MarkerOptions().position(ngabean).title("Terminal Ngabean").snippet("Terminal Ngabean").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelter)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(ngabean));
 
         fojanti = new LatLng(-7.786123, 110.410364);
-        mMap.addMarker(new MarkerOptions().position(fojanti).title("Janti Selatan").snippet("Janti Flyover").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelterr)));
+        mMap.addMarker(new MarkerOptions().position(fojanti).title("Janti Selatan").snippet("Janti Flyover").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelter)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(fojanti));
 
 
         Giwanganakhir = new LatLng(-7.834420, 110.391708);
-        mMap.addMarker(new MarkerOptions().position(Giwanganakhir).title("Terminal Giwangan").snippet("Jl Imogiri Timur").snippet("Jl Imogiri Timur").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelterr)));
+        mMap.addMarker(new MarkerOptions().position(Giwanganakhir).title("Terminal Giwangan").snippet("Jl Imogiri Timur").snippet("Jl Imogiri Timur").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_shelter)));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(Giwanganakhir));
 
 
